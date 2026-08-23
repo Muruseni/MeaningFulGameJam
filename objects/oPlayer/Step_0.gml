@@ -47,6 +47,20 @@ else if (MoveY < 0)
 
 scSpriteCollision();
 
+// Room transition tile
+
+var _transition = false;
+
+// Check the center of the player
+if (tilemap_get_at_pixel(CollisionMap, x + CollisionWidth * 0.5, y + CollisionHeight * 0.5) == 2)
+{
+    _transition = true;
+}
+
+if (_transition)
+{
+    room_goto_next();
+}
 
 // Animation
 
