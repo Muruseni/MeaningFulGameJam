@@ -33,6 +33,9 @@
   },
   "name":"MeaningfullGameJam",
   "resources":[
+    {"id":{"name":"oChair","path":"objects/oChair/oChair.yy",},},
+    {"id":{"name":"oCouch","path":"objects/oCouch/oCouch.yy",},},
+    {"id":{"name":"oDad","path":"objects/oDad/oDad.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"rApartment_CY","path":"rooms/rApartment_CY/rApartment_CY.yy",},},
     {"id":{"name":"rBasement_CV","path":"rooms/rBasement_CV/rBasement_CV.yy",},},
