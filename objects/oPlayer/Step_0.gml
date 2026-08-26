@@ -4,7 +4,16 @@ LeftKey = keyboard_check(ord("A"));
 RightKey = keyboard_check(ord("D"));
 UpKey = keyboard_check(ord("W"));
 DownKey = keyboard_check(ord("S"));
-InteractKey = mouse_check_button(mb_left);
+InteractKey = keyboard_check_pressed(ord("E"));
+
+
+// -- Sitting --
+
+if (Sitting)
+{
+    scSittable();
+    return;
+}
 
 
 // -- Movement --
@@ -14,6 +23,16 @@ InputMagnitudeV = DownKey - UpKey;
 
 MoveX = InputMagnitudeH * WalkSpeed;
 MoveY = InputMagnitudeV * WalkSpeed;
+
+// Don't allow movement while dialogue is active
+if (instance_exists(oDialogue))
+{
+    if (oDialogue.is_dialogue_active)
+    {
+        MoveX = 0;
+        MoveY = 0;
+    }
+}
 
 
 // Prevent diagonal movement from being faster
@@ -43,16 +62,86 @@ else if (MoveY < 0)
     FacingDirection = "up";
 }
 
+
 // Collision
 
 scSpriteCollision();
+
+
+// Interaction
+
+if (InteractKey && !oDialogue.is_dialogue_active)
+{
+    var _interact_x = x;
+    var _interact_y = y;
+
+    switch (FacingDirection)
+    {
+        case "right":
+            _interact_x += InteractDistance;
+            break;
+
+        case "left":
+            _interact_x -= InteractDistance;
+            break;
+
+        case "down":
+            _interact_y += InteractDistance;
+            break;
+
+        case "up":
+            _interact_y -= InteractDistance;
+            break;
+    }
+
+    var _interact_object = instance_place(
+        _interact_x,
+        _interact_y,
+        oInteractable
+    );
+
+    if (_interact_object != noone)
+    {
+        _interact_object.Interact();
+    }
+}
+
 
 // Room transition tile
 
 var _transition = false;
 
-// Check the center of the player
-if (tilemap_get_at_pixel(CollisionMap, x + CollisionWidth * 0.5, y + CollisionHeight * 0.5) == 2)
+var _centerX;
+var _centerY;
+
+// Get the center of the current collision box
+switch (FacingDirection)
+{
+    case "right":
+        _centerX = x + CollisionRightWidth * 0.5;
+        _centerY = y + CollisionRightHeight * 0.5;
+        break;
+
+    case "left":
+        _centerX = x + CollisionLeftWidth * 0.5;
+        _centerY = y + CollisionLeftHeight * 0.5;
+        break;
+
+    case "up":
+        _centerX = x + CollisionUpWidth * 0.5;
+        _centerY = y + CollisionUpHeight * 0.5;
+        break;
+
+    case "down":
+        _centerX = x + CollisionDownWidth * 0.5;
+        _centerY = y + CollisionDownHeight * 0.5;
+        break;
+}
+
+
+// Check the center of the collision box
+
+if (tilemap_get_at_pixel(CollisionMap, _centerX, _centerY) == 2)
 {
     _transition = true;
 }
@@ -62,6 +151,12 @@ if (_transition)
     room_goto_next();
 }
 
+
 // Animation
 
 scSpriteAnimate();
+
+
+// Footsteps
+
+scFootstepSound();

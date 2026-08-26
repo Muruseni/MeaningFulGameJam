@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scFootstepSound",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scFootstepSound",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

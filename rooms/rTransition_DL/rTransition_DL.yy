@@ -29,8 +29,8 @@
   ],
   "name":"rTransition_DL",
   "parent":{
-    "name":"rooms",
-    "path":"folders/rooms.yy",
+    "name":"transitions",
+    "path":"folders/rooms/transitions.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

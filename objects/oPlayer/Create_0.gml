@@ -1,7 +1,19 @@
 CollisionMap = layer_tilemap_get_id(layer_get_id("Col"));
+FloorMap = layer_tilemap_get_id(layer_get_id("Floor"));
 
 WalkSpeed = 0.8;
 
+InteractDistance = 24;
+
+// Sitting
+Sitting = false;
+SitTargetX = x;
+SitTargetY = y;
+SitDirection = "down";
+
+// Footstep settings
+FootstepTimer = 0;
+FootstepDelay = 28;
 
 // Collision sizes
 CollisionUpWidth = 23;
