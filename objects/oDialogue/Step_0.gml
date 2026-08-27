@@ -3,6 +3,13 @@ if (is_dialogue_active)
     // Space advances dialogue
     if (keyboard_check_pressed(vk_space) && !dialogue_closing && dialogue_pause <= 0)
     {
+        // Don't advance past the final credits line
+        if (room == rCredits &&
+            current_dialogue_index >= array_length(dialogue_entries) - 1)
+        {
+            return;
+        }
+
         current_dialogue_index++;
 
         // Completely finished
@@ -25,6 +32,13 @@ if (is_dialogue_active)
                 // New dialogue line
                 current_speaker = _next_entry[0];
                 current_dialogue_text = _next_entry[1];
+
+                // Run optional dialogue action
+                if (array_length(_next_entry) > 2)
+                {
+                    var _action = _next_entry[2];
+                    _action();
+                }
 
                 // Bring box back
                 dialogue_closing = false;
@@ -53,6 +67,13 @@ if (is_dialogue_active)
                 current_speaker = _next_entry[0];
                 current_dialogue_text = _next_entry[1];
 
+                // Run optional dialogue action
+                if (array_length(_next_entry) > 2)
+                {
+                    var _action = _next_entry[2];
+                    _action();
+                }
+
                 dialogue_closing = false;
                 dialogue_scale = 0;
             }
@@ -61,9 +82,22 @@ if (is_dialogue_active)
 
 
     // Animate box
+
+    var _dialogue_fade_speed = 0.15;
+
+    if (room == rTransition_Start ||
+        room == rTransition_LD ||
+        room == rTransition_DL ||
+        room == rTransition_End ||
+        room == rCredits)
+    {
+        _dialogue_fade_speed = 0.075;
+    }
+
     if (dialogue_closing)
     {
-        dialogue_scale = lerp(dialogue_scale, 0, 0.15);
+        dialogue_scale = lerp(dialogue_scale, 0, _dialogue_fade_speed);
+        dialogue_text_alpha = lerp(dialogue_text_alpha, 0, _dialogue_fade_speed);
 
         if (dialogue_scale < 0.01)
         {
@@ -79,6 +113,7 @@ if (is_dialogue_active)
     }
     else
     {
-        dialogue_scale = lerp(dialogue_scale, 1, 0.15);
+        dialogue_scale = lerp(dialogue_scale, 1, _dialogue_fade_speed);
+        dialogue_text_alpha = lerp(dialogue_text_alpha, 1, _dialogue_fade_speed);
     }
 }

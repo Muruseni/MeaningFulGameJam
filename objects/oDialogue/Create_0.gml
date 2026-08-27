@@ -16,5 +16,4 @@ dialogue_used = false;
 
 dialogue_pause = 0;
 
-
-
+dialogue_text_alpha = 1;

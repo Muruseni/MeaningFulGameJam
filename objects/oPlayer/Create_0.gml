@@ -1,7 +1,8 @@
 CollisionMap = layer_tilemap_get_id(layer_get_id("Col"));
 FloorMap = layer_tilemap_get_id(layer_get_id("Floor"));
+layer_set_visible(layer_get_id("Col"), false);
 
-WalkSpeed = 0.8;
+WalkSpeed = 3;
 
 InteractDistance = 24;
 
@@ -41,3 +42,8 @@ IdleSpriteL = sPlayer_idle_left;
 IdleSpriteR = sPlayer_idle_right;
 IdleSpriteU = sPlayer_idle_up;
 IdleSpriteD = sPlayer_idle_down;
+
+// Room transition
+Transitioning = false;
+TransitionAlpha = 0;
+

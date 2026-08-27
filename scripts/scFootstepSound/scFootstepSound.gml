@@ -55,7 +55,7 @@ function scFootstepSound()
         _footY
     );
 
-    // Wood: tiles 1-3
+    // Wood: tiles 1-3  //dirt for now
 if (_tile_index >= 1 && _tile_index <= 3)
 {
     audio_play_sound(
@@ -66,7 +66,8 @@ if (_tile_index >= 1 && _tile_index <= 3)
             soStepWood_4,
             soStepWood_5,
             soStepWood_6,
-            soStepWood_7
+            soStepWood_7,
+            soStepWood_8
         ),
         1,
         false
@@ -92,8 +93,8 @@ else if (_tile_index >= 4 && _tile_index <= 6)
     );
 }
 
-// Tile: tile 7
-else if (_tile_index == 7)
+// Tile: tile 7-15
+else if (_tile_index >= 7 && _tile_index <= 15)
 {
     audio_play_sound(
         choose(
@@ -105,6 +106,52 @@ else if (_tile_index == 7)
             soStepTile_6,
             soStepTile_7,
             soStepTile_8,
+        ),
+        1,
+        false
+    );
+}
+    // Dirt: tiles 16-17
+    else if (_tile_index >= 16 && _tile_index <= 18)
+{
+    audio_play_sound(
+        choose(
+            soStepDirt_1,
+            soStepDirt_2,
+            soStepDirt_3,
+            soStepDirt_4,
+            soStepDirt_5,
+            soStepDirt_6,
+            soStepDirt_7,
+            soStepDirt_8,
+            soStepDirt_9,
+            soStepDirt_10,
+            soStepDirt_11
+        ),
+        1,
+        false
+    );
+}
+    // Grass: tiles 19-21
+    else if (_tile_index >= 19 && _tile_index <= 21)
+{
+    audio_play_sound(
+        choose(
+            soStepGrass_1,
+            soStepGrass_2,
+            soStepGrass_3,
+            soStepGrass_4,
+            soStepGrass_5,
+            soStepGrass_6,
+            soStepGrassTall_1,
+            soStepGrassTall_2,
+            soStepGrassTall_3,
+            soStepGrassTall_4,
+            soStepGrassTall_5,
+            soStepGrassTall_6,
+            soStepGrassTall_7,
+            soStepGrassTall_8,
+            soStepGrassTall_9
         ),
         1,
         false

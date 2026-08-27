@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scDialogueWait",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scDialogueWait",
+  "parent":{
+    "name":"dialouge",
+    "path":"folders/scripts/dialouge.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
