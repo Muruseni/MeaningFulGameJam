@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlayer_idle_down",
-    "path":"sprites/sPlayer_idle_down/sPlayer_idle_down.yy",
+    "name":"sDad_Up",
+    "path":"sprites/sDad_Up/sDad_Up.yy",
   },
   "spriteMaskId":null,
   "visible":true,

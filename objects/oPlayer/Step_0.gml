@@ -146,10 +146,25 @@ if (tilemap_get_at_pixel(CollisionMap, _centerX, _centerY) == 2)
     _transition = true;
 }
 
-if (_transition)
+if (_transition && !Transitioning)
 {
-    room_goto_next();
+    Transitioning = true;
 }
+
+
+// Room transition fade
+
+if (Transitioning)
+{
+    TransitionAlpha += 0.05;
+
+    if (TransitionAlpha >= 1)
+    {
+        TransitionAlpha = 1;
+        room_goto_next();
+    }
+}
+
 
 
 // Animation

@@ -1,4 +1,4 @@
 event_inherited();
 
 InteractType = "chair";
-SitDirection = "down";
+SitDirection = "up";

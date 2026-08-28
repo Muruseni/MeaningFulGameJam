@@ -12,6 +12,7 @@ function Interact()
 
         case "chair":
             show_debug_message("Chair");
+            scDialogueStart(oDialogue, room, self);
             scSittable(self);
             break;
 

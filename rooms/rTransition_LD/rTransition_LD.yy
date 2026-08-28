@@ -10,7 +10,10 @@
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRTileLayer":"","%Name":"Darkness","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Darkness","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":30,"SerialiseWidth":30,"TileCompressedData":[-900,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tsDarkness","path":"tilesets/tsDarkness/tsDarkness.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"Darkness","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Darkness","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":30,"SerialiseWidth":30,"TileCompressedData":[
+          -489,-2147483648,-15,17,-18,-2147483648,-12,17,-18,-2147483648,-7,17,1,-2147483648,-4,17,-18,-2147483648,
+          -2,17,1,-2147483648,-3,17,1,-2147483648,-5,17,-15,-2147483648,-15,17,-276,-2147483648,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tsDarkness","path":"tilesets/tsDarkness/tsDarkness.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Col","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Col","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":60,"SerialiseWidth":60,"TileCompressedData":[
           -853,-2147483648,-38,0,-22,-2147483648,-38,0,-22,-2147483648,-38,0,-22,-2147483648,-38,0,-22,-2147483648,
           -38,0,-22,-2147483648,-38,0,-22,-2147483648,-38,0,-22,-2147483648,-38,0,-22,-2147483648,-38,0,-22,-2147483648,
