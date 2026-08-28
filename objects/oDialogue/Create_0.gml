@@ -13,7 +13,15 @@ dialogue_closing = false;
 dialogue_finished = false;
 dialogue_used = false;
 
-
 dialogue_pause = 0;
 
 dialogue_text_alpha = 1;
+
+// Used for dialogue waits
+dialogue_line_wait = false;
+
+// Used for room transition after dialogue
+transition_after_close = false;
+
+// Alarm for automatic room dialogue
+alarm[0] = -1;

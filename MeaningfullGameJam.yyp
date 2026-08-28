@@ -44,6 +44,7 @@
     {"id":{"name":"oCouch","path":"objects/oCouch/oCouch.yy",},},
     {"id":{"name":"oDad","path":"objects/oDad/oDad.yy",},},
     {"id":{"name":"oDialogue","path":"objects/oDialogue/oDialogue.yy",},},
+    {"id":{"name":"oDs","path":"objects/oDs/oDs.yy",},},
     {"id":{"name":"oGamingChair","path":"objects/oGamingChair/oGamingChair.yy",},},
     {"id":{"name":"oInteractable","path":"objects/oInteractable/oInteractable.yy",},},
     {"id":{"name":"oNPC","path":"objects/oNPC/oNPC.yy",},},
@@ -56,6 +57,7 @@
     {"id":{"name":"rDsAtNight_Ch","path":"rooms/rDsAtNight_Ch/rDsAtNight_Ch.yy",},},
     {"id":{"name":"rLiminal_CV","path":"rooms/rLiminal_CV/rLiminal_CV.yy",},},
     {"id":{"name":"rTransition_DL","path":"rooms/rTransition_DL/rTransition_DL.yy",},},
+    {"id":{"name":"rTransition_Ds","path":"rooms/rTransition_Ds/rTransition_Ds.yy",},},
     {"id":{"name":"rTransition_End","path":"rooms/rTransition_End/rTransition_End.yy",},},
     {"id":{"name":"rTransition_LD","path":"rooms/rTransition_LD/rTransition_LD.yy",},},
     {"id":{"name":"rTransition_Start","path":"rooms/rTransition_Start/rTransition_Start.yy",},},
@@ -154,6 +156,7 @@
     {"roomId":{"name":"rApartment_CY","path":"rooms/rApartment_CY/rApartment_CY.yy",},},
     {"roomId":{"name":"rTransition_End","path":"rooms/rTransition_End/rTransition_End.yy",},},
     {"roomId":{"name":"rCredits","path":"rooms/rCredits/rCredits.yy",},},
+    {"roomId":{"name":"rTransition_Ds","path":"rooms/rTransition_Ds/rTransition_Ds.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

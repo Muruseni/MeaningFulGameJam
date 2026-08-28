@@ -15,9 +15,5 @@ function Interact()
             scDialogueStart(oDialogue, room, self);
             scSittable(self);
             break;
-
-        case "switch":
-            show_debug_message("SWITCH!");
-            break;
     }
 }

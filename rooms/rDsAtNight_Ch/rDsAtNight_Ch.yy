@@ -5,7 +5,11 @@
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
-  "instanceCreationOrder":[],
+  "instanceCreationOrder":[
+    {"name":"inst_5D45B131","path":"rooms/rDsAtNight_Ch/rDsAtNight_Ch.yy",},
+    {"name":"inst_9260E67","path":"rooms/rDsAtNight_Ch/rDsAtNight_Ch.yy",},
+    {"name":"inst_41043C90","path":"rooms/rDsAtNight_Ch/rDsAtNight_Ch.yy",},
+  ],
   "isDnd":false,
   "layers":[
     {"$GMRTileLayer":"","%Name":"Darkness","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Darkness","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":30,"SerialiseWidth":30,"TileCompressedData":[-900,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"tsDarkness","path":"tilesets/tsDarkness/tsDarkness.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
@@ -31,7 +35,11 @@
           -2,0,-32,-2147483648,-23,1,-3,-2147483648,-2,0,-32,-2147483648,1,0,-25,-2147483648,-2,0,-32,-2147483648,
           1,0,-25,-2147483648,-2,0,-31,-2147483648,-2,0,-26,-2147483648,1,0,-31,-2147483648,-29,0,-679,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tsCol","path":"tilesets/tsCol/tsCol.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v4","%Name":"inst_5D45B131","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D45B131","objectId":{"name":"oDialogue","path":"objects/oDialogue/oDialogue.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.338983,"scaleY":5.571429,"x":384.0,"y":512.0,},
+        {"$GMRInstance":"v4","%Name":"inst_9260E67","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_9260E67","objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":352.0,},
+        {"$GMRInstance":"v4","%Name":"inst_41043C90","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_41043C90","objectId":{"name":"oDs","path":"objects/oDs/oDs.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":384.0,},
+      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Floor","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Floor","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":60,"SerialiseWidth":60,"TileCompressedData":[
           -1334,-2147483648,-21,3,-39,-2147483648,-21,3,-39,-2147483648,-21,3,-39,-2147483648,-21,3,-39,-2147483648,
           -21,3,-39,-2147483648,-21,3,-39,-2147483648,-21,3,-39,-2147483648,-21,3,-39,-2147483648,-21,3,-39,-2147483648,

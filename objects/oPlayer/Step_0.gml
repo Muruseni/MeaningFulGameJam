@@ -34,6 +34,14 @@ if (instance_exists(oDialogue))
     }
 }
 
+// Don't allow movement or interaction during the DS room start alarm
+if (room == rDsAtNight_Ch && oDialogue.alarm[0] > 0)
+{
+    MoveX = 0;
+    MoveY = 0;
+    InteractKey = false;
+}
+
 
 // Prevent diagonal movement from being faster
 
@@ -166,7 +174,6 @@ if (Transitioning)
 }
 
 
-
 // Animation
 
 scSpriteAnimate();
@@ -175,3 +182,15 @@ scSpriteAnimate();
 // Footsteps
 
 scFootstepSound();
+
+// Player pop
+if (PopTimer > 0)
+{
+    PopTimer--;
+    
+    PopHeight = -sin((PopTimer / 10) * pi) * 4;
+}
+else
+{
+    PopHeight = 0;
+}
