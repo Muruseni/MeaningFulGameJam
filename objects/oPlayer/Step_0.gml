@@ -1,3 +1,15 @@
+// Fade in when entering a room
+if (TransitionAlpha > 0 && !Transitioning)
+{
+    TransitionAlpha -= 0.05;
+
+    if (TransitionAlpha <= 0)
+    {
+        TransitionAlpha = 0;
+    }
+}
+
+
 // -- Input --
 
 LeftKey = keyboard_check(ord("A"));
@@ -32,14 +44,6 @@ if (instance_exists(oDialogue))
         MoveX = 0;
         MoveY = 0;
     }
-}
-
-// Don't allow movement or interaction during the DS room start alarm
-if (room == rDsAtNight_Ch && oDialogue.alarm[0] > 0)
-{
-    MoveX = 0;
-    MoveY = 0;
-    InteractKey = false;
 }
 
 
@@ -166,7 +170,7 @@ if (Transitioning)
 {
     TransitionAlpha += 0.05;
 
-    if (TransitionAlpha >= 1)
+    if (TransitionAlpha >= 0.95)
     {
         TransitionAlpha = 1;
         room_goto_next();
@@ -183,7 +187,9 @@ scSpriteAnimate();
 
 scFootstepSound();
 
+
 // Player pop
+
 if (PopTimer > 0)
 {
     PopTimer--;

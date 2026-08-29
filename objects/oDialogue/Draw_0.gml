@@ -7,6 +7,7 @@ if (dialogue_scale > 0)
     if (room == rTransition_Start ||
         room == rTransition_LD ||
         room == rTransition_DL ||
+        room == rTransition_Ds ||
         room == rTransition_End||
         room == rCredits)
     {

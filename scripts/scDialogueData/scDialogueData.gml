@@ -19,10 +19,7 @@ entries: [
 ["", ""],
 ["You:", "Can I play with you"],
 ["", ""],
-["Dad:", "Hey Kiddo, ", function()
-{
-oDad.sprite_index = sDad;
-}],
+["Dad:", "Hey Kiddo, "],
 ["", ""],
 ["Dad:", "Yeah, come join me"]
 ],
@@ -97,6 +94,16 @@ return {
 entries: [
 ["", "Games were always there for us"]
 ],
+once: true
+};
+} else if (_room == rApartment_CY && _object == noone)
+{
+return {
+entries: [
+["S/O:", "Ill be waiting for you in the car!"],
+["", ""],
+["You:", "Okay, give me a moment!"],
+ ],
 once: true
 };
 }

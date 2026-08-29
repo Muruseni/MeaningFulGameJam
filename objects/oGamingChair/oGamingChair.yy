@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCouch",
-    "path":"sprites/sCouch/sCouch.yy",
+    "name":"InteriorTilesLITE_3",
+    "path":"sprites/InteriorTilesLITE_3/InteriorTilesLITE_3.yy",
   },
   "spriteMaskId":null,
   "visible":true,

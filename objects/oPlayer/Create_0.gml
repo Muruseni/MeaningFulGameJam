@@ -49,5 +49,3 @@ TransitionAlpha = 0;
 
 PopTimer = 0;
 PopHeight = 0;
-
-TransitionFromDs = false;
