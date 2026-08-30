@@ -117,6 +117,10 @@ if (dialogue_closing)
         {
             is_dialogue_active = false;
         }
+        if (room == rDsAtNight_Ch)
+       {
+           interaction_locked = false;
+       }
     }
 }
 else

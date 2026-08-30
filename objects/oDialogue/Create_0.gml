@@ -25,3 +25,6 @@ transition_after_close = false;
 
 // Alarm for automatic room dialogue
 alarm[0] = -1;
+
+interaction_locked = false;
+

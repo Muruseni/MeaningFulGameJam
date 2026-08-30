@@ -33,8 +33,11 @@ if (Sitting)
 InputMagnitudeH = RightKey - LeftKey;
 InputMagnitudeV = DownKey - UpKey;
 
+
+if (room != rDsAtNight_Ch){
 MoveX = InputMagnitudeH * WalkSpeed;
 MoveY = InputMagnitudeV * WalkSpeed;
+}
 
 // Don't allow movement while dialogue is active
 if (instance_exists(oDialogue))
@@ -82,7 +85,7 @@ scSpriteCollision();
 
 // Interaction
 
-if (InteractKey && !oDialogue.is_dialogue_active)
+if (InteractKey && !oDialogue.is_dialogue_active && !oDialogue.interaction_locked)
 {
     var _interact_x = x;
     var _interact_y = y;
