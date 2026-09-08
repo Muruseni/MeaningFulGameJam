@@ -3,6 +3,8 @@ Mine and Moggo's first ever game jam!
 
 ====== Game Jam Results! ======   
 
+RATED VERSION SUBMITTED: Auguest 30th 2026
+
 Ranked out of 26 submissions   
 Criteria	Rank	Score*	Raw Score   
 
