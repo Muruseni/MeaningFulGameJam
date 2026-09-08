@@ -23,7 +23,7 @@ InteractKey = keyboard_check_pressed(ord("E"));
 
 if (Sitting)
 {
-    scSittable();
+    scSittable(oCouch);
     return;
 }
 
