@@ -1,19 +1,19 @@
 @Meaningful Game Jam!!
 Mine and Moggo's first ever game jam!
 
-====== Game Jam Results! ======
+====== Game Jam Results! ======   
 
-Ranked out of 26 submissions
-Criteria	Rank	Score*	Raw Score
+Ranked out of 26 submissions   
+Criteria	Rank	Score*	Raw Score   
 
-Indieverse Community Choice	#4	n/a	n/a
+Indieverse Community Choice	#4	n/a	n/a   
 
-Heart	        #5            	4.083	4.083
-Audio		    #7             2.917	2.917
-Overall	 	 #8              3.000	3.000
-Art		         #11            3.167	3.167
-Fun/Enjoyment	#12 2.667	2.667
-Gameplay	#14          	2.167	2.167
+Heart	        #5            	4.083	4.083   
+Audio		    #7             2.917	2.917   
+Overall	 	 #8              3.000	3.000   
+Art		         #11            3.167	3.167   
+Fun/Enjoyment	#12 2.667	2.667   
+Gameplay	#14          	2.167	2.167   
 
 Ranked from 12 ratings. Score is adjusted from raw score by the median number of ratings per game in the jam.
 
